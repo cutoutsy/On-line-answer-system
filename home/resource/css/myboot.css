@@ -1,0 +1,215 @@
+html{
+    font-family:"Microsoft Yahei";
+}
+.containerkk{
+    margin-top: 10%;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 0px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
+.differentTable, .differentTable td{
+   border-color: #2C3E50;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #2C3E50;
+  border-right-width:1px;
+  border-top-width: 1px;
+}
+.list-inlineul{
+    margin-bottom:0px;
+}
+
+/*
+ *new color
+ */
+.table > thead > tr > td.myactive,
+.table > tbody > tr > td.myactive,
+.table > tfoot > tr > td.myactive,
+.table > thead > tr > th.myactive,
+.table > tbody > tr > th.myactive,
+.table > tfoot > tr > th.myactive,
+.table > thead > tr.myactive > td,
+.table > tbody > tr.myactive > td,
+.table > tfoot > tr.myactive > td,
+.table > thead > tr.myactive > th,
+.table > tbody > tr.myactive > th,
+.table > tfoot > tr.myactive > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > td.myactive:hover,
+.table-hover > tbody > tr > th.myactive:hover,
+.table-hover > tbody > tr.myactive:hover > td,
+.table-hover > tbody > tr:hover > .myactive,
+.table-hover > tbody > tr.myactive:hover > th {
+  background-color: #e8e8e8;
+}
+.table > thead > tr > td.mysuccess,
+.table > tbody > tr > td.mysuccess,
+.table > tfoot > tr > td.mysuccess,
+.table > thead > tr > th.mysuccess,
+.table > tbody > tr > th.mysuccess,
+.table > tfoot > tr > th.mysuccess,
+.table > thead > tr.mysuccess > td,
+.table > tbody > tr.mysuccess > td,
+.table > tfoot > tr.mysuccess > td,
+.table > thead > tr.mysuccess > th,
+.table > tbody > tr.mysuccess > th,
+.table > tfoot > tr.mysuccess > th {
+  background-color: #dff0d8;
+}
+.table-hover > tbody > tr > td.mysuccess:hover,
+.table-hover > tbody > tr > th.mysuccess:hover,
+.table-hover > tbody > tr.mysuccess:hover > td,
+.table-hover > tbody > tr:hover > .mysuccess,
+.table-hover > tbody > tr.mysuccess:hover > th {
+  background-color: #d0e9c6;
+}
+.table > thead > tr > td.myinfo,
+.table > tbody > tr > td.myinfo,
+.table > tfoot > tr > td.myinfo,
+.table > thead > tr > th.myinfo,
+.table > tbody > tr > th.myinfo,
+.table > tfoot > tr > th.myinfo,
+.table > thead > tr.myinfo > td,
+.table > tbody > tr.myinfo > td,
+.table > tfoot > tr.myinfo > td,
+.table > thead > tr.myinfo > th,
+.table > tbody > tr.myinfo > th,
+.table > tfoot > tr.myinfo > th {
+  background-color: #d9edf7;
+}
+.table-hover > tbody > tr > td.myinfo:hover,
+.table-hover > tbody > tr > th.myinfo:hover,
+.table-hover > tbody > tr.myinfo:hover > td,
+.table-hover > tbody > tr:hover > .myinfo,
+.table-hover > tbody > tr.myinfo:hover > th {
+  background-color: #c4e3f3;
+}
+.table > thead > tr > td.mywarning,
+.table > tbody > tr > td.mywarning,
+.table > tfoot > tr > td.mywarning,
+.table > thead > tr > th.mywarning,
+.table > tbody > tr > th.mywarning,
+.table > tfoot > tr > th.mywarning,
+.table > thead > tr.mywarning > td,
+.table > tbody > tr.mywarning > td,
+.table > tfoot > tr.mywarning > td,
+.table > thead > tr.mywarning > th,
+.table > tbody > tr.mywarning > th,
+.table > tfoot > tr.mywarning > th {
+  background-color: #fcf8e3;
+}
+.table-hover > tbody > tr > td.mywarning:hover,
+.table-hover > tbody > tr > th.mywarning:hover,
+.table-hover > tbody > tr.mywarning:hover > td,
+.table-hover > tbody > tr:hover > .mywarning,
+.table-hover > tbody > tr.mywarning:hover > th {
+  background-color: #faf2cc;
+}
+.table > thead > tr > td.mydanger,
+.table > tbody > tr > td.mydanger,
+.table > tfoot > tr > td.mydanger,
+.table > thead > tr > th.mydanger,
+.table > tbody > tr > th.mydanger,
+.table > tfoot > tr > th.mydanger,
+.table > thead > tr.mydanger > td,
+.table > tbody > tr.mydanger > td,
+.table > tfoot > tr.mydanger > td,
+.table > thead > tr.mydanger > th,
+.table > tbody > tr.mydanger > th,
+.table > tfoot > tr.mydanger > th {
+  background-color: #f2dede;
+}
+.table-hover > tbody > tr > td.mydanger:hover,
+.table-hover > tbody > tr > th.mydanger:hover,
+.table-hover > tbody > tr.mydanger:hover > td,
+.table-hover > tbody > tr:hover > .mydanger,
+.table-hover > tbody > tr.mydanger:hover > th {
+  background-color: #ebcccc;
+}
+.afterclick{
+     /*   background-color: #ecf0f1;*/
+     font-weight: 900;
+     font-size: 18px;
+}
+.mynav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.mynav > li {
+  position: relative;
+  display: block;
+}
+.mynav > li > a {
+  position: relative;
+ display: block;
+  padding: 10px 15px;
+}
+.mynav > li > a:hover,
+.mynav > li > a:focus {
+  text-decoration: none;
+  background-color: #d0e9c6;
+}
+.mynav > li.disabled > a {
+  color: #b4bcc2;
+}
+.mynav > li.disabled > a:hover,
+.mynav > li.disabled > a:focus {
+  color: #b4bcc2;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.mynav .open > a,
+.mynav .open > a:hover,
+.mynav .open > a:focus {
+  background-color: #ecf0f1;
+  border-color: #18bc9c;
+}
+.leftsid li a{
+        color: #75878a;
+}
+.mynavl{
+  display: inline;
+  list-style: none;
+}
+.startbutton{
+  margin-top: 10%;
+}
+
+#mess{
+  width: 100px;
+  height: 50px;
+  margin-left: 1050px;
+  margin-top: 450px;
+  background-image: url(../img/bubble.png);
+  background-repeat : no-repeat;
+  background-size:100% 100%; 
+  display: none;
+  line-height: 40px;
+  text-align: center;
+}
+
+#result{
+  width: 280px;
+  color: #FFFFFF;
+  background-color:#3498DB;
+  border-radius: 10px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 60px;
+  display: none;
+}

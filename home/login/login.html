@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>xxxCTF</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="../resource/css/newbootstrap.css" type="text/css" media="screen" />
+    <link rel=stylesheet href="../resource/css/bootstrap-responsive.css" type="text/css" media="screen" />
+   <link rel=stylesheet href="../resource/css/myboot.css" type="text/css" media="screen" /> 
+    <script type="text/javascript" src="../resource/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">XXXCTF</a>
+  </div>
+ 
+</div>
+<div class="container containerkk">
+    <form class="form-horizontal" method="post" action="./handle_login.php">
+  <fieldset>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-5 control-label">用户名</label>
+      <div class="col-lg-3">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Email" name="username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-5 control-label">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+      <div class="col-lg-3">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="userpwd">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-3 col-lg-offset-5 ">
+        <input type="hidden" name="action" value="login">
+        <button type="submit" class="btn btn-primary btn-block" name="login">登录</button>
+      </div>
+      </div>
+</fieldset>
+</form>
+</div>
+<div class="footer">
+    <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="row text-center">
+        <dl class="text-muted">
+            <dd>&nbsp;</dd>
+            <dd>&copy;2014 xxx公司</dd>
+            <dd>power by xxx公司</dd>
+        </dl>
+    </div>
+</div>
+</div>
+</body>
+</html>

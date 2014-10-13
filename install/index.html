@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>安装向导</title>
+	<link rel="stylesheet" href="images/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+	<script>
+		function check(){
+			var pwd1= document.getElementById('pw1').value;
+			var pwd2= document.getElementById('pw2').value;
+			var pwd2r= document.getElementById('pwd2r');
+			if(pwd1 != pwd2){
+				pwd2r.innerHTML = "<font color='red'>密码不一致，请重新输入</font>";
+				return false;
+			}else{
+				pwd2r.innerHTML = "";
+			}
+		}
+	</script>
+	<div class="container">
+		<div class="header">
+		<h1>安装数据库</h1>
+		</div>
+
+		<div class="main"><form method="post" action="deal.php" name="register">
+		<input type="hidden" name="step" value="3">
+		<input type="hidden" name="install_ucenter" value="yes">
+		<div id="form_items_3" ><br /><div class="desc"><b>填写数据库信息</b></div>
+		<table class="tb2">
+		<tr><th class="tbopt" align="left">&nbsp;数据库服务器:</th>
+		<td><input type="text" name="dbhost" value="localhost" size="35" class="txt"></td>
+		<td>数据库服务器地址, 一般为 localhost</td>
+		</tr>
+
+		<tr><th class="tbopt" align="left">&nbsp;数据库名:</th>
+		<td><input type="text" name="dbname" value="ultrax" size="35" class="txt"></td>
+		<td></td>
+		</tr>
+
+		<tr><th class="tbopt" align="left">&nbsp;数据库用户名:</th>
+		<td><input type="text" name="dbuser" value="root" size="35" class="txt"></td>
+		<td></td>
+		</tr>
+
+		<tr><th class="tbopt" align="left">&nbsp;数据库密码:</th>
+		<td><input type="text" name="dbpw" value="root" size="35" class="txt"></td>
+		<td></td>
+		</tr>
+
+		</table><div class="desc"><b>填写管理员信息</b></div><table class="tb2">
+		<tr><th class="tbopt" align="left">&nbsp;管理员账号:</th>
+		<td><input type="text" name="username" value="admin" size="35" class="txt"></td>
+		<td></td>
+		</tr>
+
+		<tr><th class="tbopt" align="left">&nbsp;管理员密码:</th>
+		<td><input type="password" id="pw1" name="password" value="" size="35" class="txt"></td>
+		<td>管理员密码不能为空</td>
+		</tr>
+
+		<tr><th class="tbopt" align="left">&nbsp;重复密码:</th>
+		<td><input type="password" onblur="check()" id="pw2" name="password2" value="" size="35" class="txt"></td>
+		<td id="pwd2r"></td>
+		<td></td>
+		</tr>
+
+		</table></div><table class="tb2">
+		<tr><th class="tbopt" align="left">&nbsp;</th>
+		<td><input type="submit" onclick="test()" name="submitname" value="下一步" class="btn">
+		</td>
+		<td></td>
+		</tr>
+
+		</table>
+		</form>
+		<div class="footer"></div>
+		</div>
+		</div>
+	</div>
+</body>
+
+</html>

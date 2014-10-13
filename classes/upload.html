@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>上传文件</title>
+</head>
+<body>
+	<form action="uploads.php" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+		选择文件：<input type="file" name="filetest[]" multiple="multiple">
+		<input type="submit" value="上传文件">
+	</form>
+</body>
+</html>
